@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshMart - Supermarket Weekly Deals & Offers</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-content">
+
+
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-location-dot"></i> Find a Store</span>
+      <span><i class="fa-solid fa-clock"></i> Open: 8:00 AM - 10:00 PM</span>
+    </div>
+
+    <div class="topbar-right">
+      <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+
+
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="FreshMart Logo">
+
+    </a>
+
+    <!-- Navigation -->
+    <ul class="nav-menu" id="nav-menu">
+
+      <!-- Home Dropdown -->
+      <li class="dropdown">
+        <a href="#">
+          Home
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+
+      <li><a href="stores.html">Stores</a></li>
+      <li><a href="categories.html"class="active">Categories</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="loyalty.html">Loyalty Rewards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <!-- Mobile Actions -->
+      <li class="mobile-actions">
+        <div class="mobile-action-buttons">
+
+          <button id="rtl-toggle-mobile" class="icon-btn">
+            RTL
+          </button>
+
+          <button id="theme-toggle-mobile" class="icon-btn">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <a href="login.html" class="btn btn-login">
+            Login
+          </a>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- Desktop Actions -->
+    <div class="header-actions">
+
+      <button id="rtl-toggle" class="icon-btn">
+        RTL
+      </button>
+
+      <button id="theme-toggle" class="icon-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <a href="login.html" class="btn btn-login">
+        Login
+      </a>
+
+    </div>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+</div>
+
+</header>
+
+<!-- ========================================
+     CATEGORIES HERO BANNER
+======================================== -->
+<section class="catalog-hero">
+  <div class="container">
+
+    <div class="catalog-hero-layout">
+
+      <div class="catalog-content">
+
+        <div class="catalog-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Categories</span>
+        </div>
+
+        <span class="catalog-badge">FreshMart Categories</span>
+
+        <h1>Shop Fresh Groceries by Category</h1>
+
+        <p>
+          Browse our carefully organized grocery categories including fresh
+          fruits, vegetables, dairy products, bakery items, beverages,
+          snacks, and everyday household essentials for a faster and more
+          enjoyable shopping experience.
+        </p>
+
+        <div class="catalog-actions">
+
+          <a href="#popular-categories" class="catalog-primary-btn">
+            Explore Categories
+          </a>
+
+          <a href="shop.html" class="catalog-secondary-btn">
+            View All Products
+          </a>
+
+        </div>
+
+        <div class="catalog-stats">
+
+          <div class="catalog-stat-box">
+            <h3>20+</h3>
+            <p>Product Categories</p>
+          </div>
+
+          <div class="catalog-stat-box">
+            <h3>5000+</h3>
+            <p>Fresh Products</p>
+          </div>
+
+          <div class="catalog-stat-box">
+            <h3>Daily</h3>
+            <p>Fresh Restocking</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="catalog-visual">
+
+        <img src="images/categories-hero.jpg" alt="FreshMart Grocery Categories">
+
+        <div class="catalog-floating-card">
+
+          <i class="fas fa-basket-shopping"></i>
+
+          <div>
+            <h4>Fresh Categories</h4>
+            <p>Handpicked quality groceries every day</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ========================================
+     POPULAR SHOPPING CATEGORIES
+======================================== -->
+<section class="popular-section" id="popular-categories">
+  <div class="container">
+
+    <div class="popular-header">
+      <span class="popular-tag">Top Categories</span>
+      <h2>Popular Shopping Categories</h2>
+      <p>
+        Explore our most popular grocery categories and find fresh products,
+        daily essentials, and premium quality items for every household need.
+      </p>
+    </div>
+
+    <div class="popular-grid">
+
+      <!-- Fresh Fruits -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/fruits.jpg" alt="Fresh Fruits">
+        </div>
+        <div class="popular-content">
+          <h3>Fresh Fruits</h3>
+          <p>120+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Vegetables -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/vegetables.jpg" alt="Fresh Vegetables">
+        </div>
+        <div class="popular-content">
+          <h3>Vegetables</h3>
+          <p>180+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Dairy -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/dairy.jpg" alt="Dairy Products">
+        </div>
+        <div class="popular-content">
+          <h3>Dairy Products</h3>
+          <p>95+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Bakery -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/bakery.jpg" alt="Bakery Items">
+        </div>
+        <div class="popular-content">
+          <h3>Bakery</h3>
+          <p>80+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Beverages -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/beverages.jpg" alt="Beverages">
+        </div>
+        <div class="popular-content">
+          <h3>Beverages</h3>
+          <p>150+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Snacks -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/snacks.jpg" alt="Snacks">
+        </div>
+        <div class="popular-content">
+          <h3>Snacks</h3>
+          <p>200+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Pantry -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/pantry.jpg" alt="Pantry Staples">
+        </div>
+        <div class="popular-content">
+          <h3>Pantry Staples</h3>
+          <p>160+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Household -->
+      <div class="popular-card">
+        <div class="popular-image">
+          <img src="images/household.jpg" alt="Household Essentials">
+        </div>
+        <div class="popular-content">
+          <h3>Household Essentials</h3>
+          <p>110+ Products</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     FEATURED FRESH PRODUCE COLLECTION
+======================================== -->
+<section class="produce-section">
+  <div class="container">
+
+    <div class="produce-layout">
+
+      <!-- Left Image -->
+      <div class="produce-image">
+        <img src="images/featured-produce,.jpg" alt="Fresh Fruits and Vegetables">
+      </div>
+
+      <!-- Right Content -->
+      <div class="produce-content">
+
+        <span class="produce-tag">Featured Collection</span>
+
+        <h2>Fresh Fruits & Vegetables Delivered Daily</h2>
+
+        <p>
+          Handpicked seasonal fruits and vegetables sourced directly from trusted
+          local farms and quality suppliers. Every product is carefully selected
+          to ensure freshness, nutrition, and exceptional taste for your family.
+        </p>
+
+        <div class="produce-features">
+
+          <div class="produce-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>100% Farm-Fresh Produce</span>
+          </div>
+
+          <div class="produce-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Daily Quality Inspection</span>
+          </div>
+
+          <div class="produce-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Seasonal Organic Options</span>
+          </div>
+
+          <div class="produce-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Freshly Restocked Every Morning</span>
+          </div>
+
+        </div>
+
+        <div class="produce-buttons">
+
+          <a href="shop.html" class="produce-primary-btn">
+            <i class="fas fa-cart-shopping"></i>
+            Shop Fresh Produce
+          </a>
+
+          <a href="shop.html" class="produce-secondary-btn">
+            <i class="fas fa-leaf"></i>
+            View Organic Range
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ========================================
+     WELLNESS & NATURAL COLLECTION
+======================================== -->
+<section class="wellness-section">
+  <div class="container">
+
+    <div class="wellness-header">
+      <span class="wellness-tag">Natural Living</span>
+      <h2>Wellness & Natural Collection</h2>
+      <p>
+        Explore our carefully selected range of organic vegetables, wholesome
+        grains, natural dairy products, and nutritious wellness foods designed
+        to support a healthy and balanced lifestyle.
+      </p>
+    </div>
+
+    <div class="wellness-grid">
+
+      <!-- Farm Fresh Vegetables -->
+      <div class="wellness-card">
+        <div class="wellness-media">
+          <img src="images/organic-vegetables.jpg" alt="Farm Fresh Vegetables">
+        </div>
+        <div class="wellness-body">
+          <h3>Farm Fresh Vegetables</h3>
+          <p>
+            Naturally grown vegetables harvested with care to provide freshness,
+            nutrition, and exceptional quality every day.
+          </p>
+          <a href="shop.html">Browse Collection</a>
+        </div>
+      </div>
+
+      <!-- Healthy Grains -->
+      <div class="wellness-card">
+        <div class="wellness-media">
+          <img src="images/organic-grains.jpg" alt="Healthy Grains">
+        </div>
+        <div class="wellness-body">
+          <h3>Healthy Grains</h3>
+          <p>
+            Whole grains, oats, quinoa, millet, and other fiber-rich staples
+            that make everyday meals healthier and more nutritious.
+          </p>
+          <a href="shop.html">Browse Collection</a>
+        </div>
+      </div>
+
+      <!-- Pure Dairy -->
+      <div class="wellness-card">
+        <div class="wellness-media">
+          <img src="images/organic-dairy.jpg" alt="Pure Dairy Products">
+        </div>
+        <div class="wellness-body">
+          <h3>Pure Dairy Products</h3>
+          <p>
+            Fresh milk, yogurt, butter, and cheese sourced from trusted dairy
+            farms and prepared with natural ingredients.
+          </p>
+          <a href="shop.html">Browse Collection</a>
+        </div>
+      </div>
+
+      <!-- Smart Snacks -->
+      <div class="wellness-card">
+        <div class="wellness-media">
+          <img src="images/organic-wellness.jpg" alt="Smart Snacks">
+        </div>
+        <div class="wellness-body">
+          <h3>Smart Snacks</h3>
+          <p>
+            A nutritious range of nuts, seeds, dried fruits, herbal teas, and
+            healthy snack options for mindful eating.
+          </p>
+          <a href="shop.html">Browse Collection</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wellness-footer">
+      <a href="shop.html" class="wellness-btn">
+        <i class="fas fa-seedling"></i>
+        Explore Wellness Collection
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- ========================================
+     SEASONAL SPECIALS & LIMITED-TIME PICKS
+======================================== -->
+<section class="seasonal-section">
+  <div class="container">
+
+    <div class="seasonal-header">
+      <span class="seasonal-tag">Limited-Time Picks</span>
+      <h2>Seasonal Specials & Fresh Arrivals</h2>
+      <p>
+        Discover our handpicked seasonal fruits, farm-fresh vegetables, and
+        exclusive festive collections available for a limited time. Enjoy the
+        freshest flavors and the best value every season.
+      </p>
+    </div>
+
+    <div class="seasonal-grid">
+
+      <!-- Summer Fruits -->
+      <div class="seasonal-card">
+        <div class="seasonal-image">
+          <img src="images/seasonal-fruits.jpg" alt="Summer Fruits Collection">
+          <span class="seasonal-badge sale">Up to 30% Off</span>
+        </div>
+        <div class="seasonal-content">
+          <h3>Summer Fruit Collection</h3>
+          <p>
+            Fresh mangoes, watermelons, berries, citrus fruits, and refreshing
+            seasonal favorites sourced from premium farms.
+          </p>
+          <a href="shop.html">Shop Summer Fruits</a>
+        </div>
+      </div>
+
+      <!-- Seasonal Vegetables -->
+      <div class="seasonal-card">
+        <div class="seasonal-image">
+          <img src="images/seasonal-vegetables.jpg" alt="Seasonal Vegetables">
+          <span class="seasonal-badge fresh">Fresh Harvest</span>
+        </div>
+        <div class="seasonal-content">
+          <h3>Seasonal Vegetables</h3>
+          <p>
+            Farm-fresh leafy greens, broccoli, cauliflower, carrots, and
+            nutrient-rich vegetables harvested at peak freshness.
+          </p>
+          <a href="shop.html">Shop Fresh Vegetables</a>
+        </div>
+      </div>
+
+      <!-- Festive Collection -->
+      <div class="seasonal-card">
+        <div class="seasonal-image">
+          <img src="images/seasonal-festive.jpg" alt="Festive Collection">
+          <span class="seasonal-badge limited">Limited Edition</span>
+        </div>
+        <div class="seasonal-content">
+          <h3>Festive Favorites</h3>
+          <p>
+            Premium grocery hampers, traditional sweets, gourmet snacks, and
+            celebration essentials for every special occasion.
+          </p>
+          <a href="shop.html">Shop Festive Collection</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="seasonal-footer">
+      <div class="seasonal-note">
+        <i class="fas fa-calendar-days"></i>
+        <p>
+          Seasonal products are available for a limited time and are restocked
+          regularly while supplies last.
+        </p>
+      </div>
+
+      <a href="shop.html" class="seasonal-btn">
+        <i class="fas fa-basket-shopping"></i>
+        Shop Seasonal Specials
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     SHOP BY LIFESTYLE
+======================================== -->
+<section class="lifestyle-section">
+  <div class="container">
+
+    <div class="lifestyle-header">
+      <span class="lifestyle-tag">Personalized Shopping</span>
+      <h2>Shop by Lifestyle</h2>
+      <p>
+        Find products that match your lifestyle, dietary preferences, and daily
+        routine. Explore healthy, convenient, and family-friendly grocery
+        collections curated for every customer.
+      </p>
+    </div>
+
+    <div class="lifestyle-grid">
+
+      <!-- Vegan Choices -->
+      <div class="lifestyle-card">
+        <div class="lifestyle-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="lifestyle-content">
+          <h3>Vegan Choices</h3>
+          <p>
+            Plant-based foods, dairy alternatives, and naturally sourced
+            grocery essentials for a healthier vegan lifestyle.
+          </p>
+          <a href="shop.html">Explore Vegan Range</a>
+        </div>
+      </div>
+
+      <!-- High Protein -->
+      <div class="lifestyle-card">
+        <div class="lifestyle-icon">
+          <i class="fas fa-dumbbell"></i>
+        </div>
+        <div class="lifestyle-content">
+          <h3>High-Protein Foods</h3>
+          <p>
+            Protein-rich snacks, dairy products, grains, and nutrition-focused
+            foods to support an active lifestyle.
+          </p>
+          <a href="shop.html">Explore Protein Foods</a>
+        </div>
+      </div>
+
+      <!-- Heart Healthy -->
+      <div class="lifestyle-card">
+        <div class="lifestyle-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="lifestyle-content">
+          <h3>Heart-Healthy Picks</h3>
+          <p>
+            Whole grains, healthy oils, nuts, seeds, and low-sodium essentials
+            selected for heart-conscious nutrition.
+          </p>
+          <a href="shop.html">Explore Healthy Picks</a>
+        </div>
+      </div>
+
+      <!-- Gluten Free -->
+      <div class="lifestyle-card">
+        <div class="lifestyle-icon">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <div class="lifestyle-content">
+          <h3>Gluten-Free Essentials</h3>
+          <p>
+            Carefully selected gluten-free grocery products and meal ingredients
+            for special dietary needs.
+          </p>
+          <a href="shop.html">Explore Gluten-Free</a>
+        </div>
+      </div>
+
+      <!-- Quick Meals -->
+      <div class="lifestyle-card">
+        <div class="lifestyle-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="lifestyle-content">
+          <h3>Quick Meal Solutions</h3>
+          <p>
+            Ready-to-cook ingredients, easy dinner staples, and convenient meal
+            solutions for busy families.
+          </p>
+          <a href="shop.html">Explore Quick Meals</a>
+        </div>
+      </div>
+
+      <!-- Family Essentials -->
+      <div class="lifestyle-card">
+        <div class="lifestyle-icon">
+          <i class="fas fa-basket-shopping"></i>
+        </div>
+        <div class="lifestyle-content">
+          <h3>Family Essentials</h3>
+          <p>
+            Bulk groceries, breakfast foods, dairy, snacks, and everyday
+            household products for the entire family.
+          </p>
+          <a href="shop.html">Explore Family Range</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     FRESHMART CATEGORY GALLERY
+======================================== -->
+<section class="galleryx-section">
+  <div class="container">
+
+    <div class="galleryx-header">
+      <span class="galleryx-tag">FreshMart Gallery</span>
+      <h2>Freshness in Every Category</h2>
+      <p>
+        Take a closer look at our fresh produce, bakery creations, dairy
+        essentials, healthy snacks, and beautifully organized grocery
+        collections available across every FreshMart store.
+      </p>
+    </div>
+
+    <div class="galleryx-grid">
+
+      <!-- Large Fruits Image -->
+      <div class="galleryx-item galleryx-tall">
+        <img src="images/gallery-fruits.jpg" alt="Fresh Fruits">
+        <div class="galleryx-overlay">
+          <h3>Fresh Fruits</h3>
+          <p>Seasonal & farm fresh</p>
+        </div>
+      </div>
+
+      <!-- Bakery Image -->
+      <div class="galleryx-item">
+        <img src="images/gallery-bakery.jpg" alt="Bakery Collection">
+        <div class="galleryx-overlay">
+          <h3>Bakery Collection</h3>
+          <p>Freshly baked every day</p>
+        </div>
+      </div>
+
+      <!-- Vegetables Image -->
+      <div class="galleryx-item galleryx-tall">
+        <img src="images/gallery-vegetables.jpg" alt="Fresh Vegetables">
+        <div class="galleryx-overlay">
+          <h3>Fresh Vegetables</h3>
+          <p>Handpicked quality produce</p>
+        </div>
+      </div>
+
+      <!-- Dairy Image -->
+      <div class="galleryx-item">
+        <img src="images/gallery-dairy.jpg" alt="Dairy Products">
+        <div class="galleryx-overlay">
+          <h3>Dairy Essentials</h3>
+          <p>Fresh & premium quality</p>
+        </div>
+      </div>
+
+      <!-- Snacks Image -->
+      <div class="galleryx-item galleryx-wide">
+        <img src="images/gallery-snacks.jpg" alt="Healthy Snacks">
+        <div class="galleryx-overlay">
+          <h3>Healthy Snacks</h3>
+          <p>Nutritious choices for every day</p>
+        </div>
+      </div>
+
+      <!-- Grocery Aisle Image -->
+      <div class="galleryx-item">
+        <img src="images/gallery-store.jpg" alt="FreshMart Grocery Aisle">
+        <div class="galleryx-overlay">
+          <h3>Premium Grocery Aisles</h3>
+          <p>Organized & fully stocked</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="galleryx-footer">
+      <a href="gallery.html" class="galleryx-btn">
+        <i class="fas fa-images"></i>
+        View Full Gallery
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     START SHOPPING WITH FRESHMART
+======================================== -->
+<section class="ctafresh-section">
+  <div class="container">
+
+    <div class="ctafresh-wrapper">
+
+      <div class="ctafresh-content">
+
+        <span class="ctafresh-tag">FreshMart Categories</span>
+
+        <h2>Start Shopping with FreshMart Today</h2>
+
+        <p>
+          Explore thousands of fresh groceries, organic foods, bakery products,
+          dairy essentials, beverages, snacks, and household items carefully
+          selected to bring quality, freshness, and value to your everyday shopping.
+        </p>
+
+        <div class="ctafresh-buttons">
+
+          <a href="shop.html" class="ctafresh-primary-btn">
+            <i class="fas fa-cart-shopping"></i>
+            Shop Now
+          </a>
+
+          <a href="stores.html" class="ctafresh-secondary-btn">
+            <i class="fas fa-location-dot"></i>
+            Find a Store
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="ctafresh-stats">
+
+        <div class="ctafresh-stat-box">
+          <h3>5000+</h3>
+          <p>Fresh Products</p>
+        </div>
+
+        <div class="ctafresh-stat-box">
+          <h3>20+</h3>
+          <p>Shopping Categories</p>
+        </div>
+
+        <div class="ctafresh-stat-box">
+          <h3>Daily</h3>
+          <p>Fresh Restocking</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER START ================= -->
+
+<footer class="footer">
+
+  <!-- Newsletter -->
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+
+
+    <div class="newsletter-content">
+      <h2>Stay Updated with Weekly Deals</h2>
+      <p>Subscribe to receive exclusive discounts, fresh offers, and supermarket deals every week.</p>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn btn-subscribe">
+        Subscribe
+      </button>
+    </form>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- Main Footer -->
+
+  <div class="footer-main">
+    <div class="container">
+
+  <div class="footer-grid">
+
+    <!-- Logo & About -->
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.png" alt="FreshMart Logo">
+      </a>
+
+      <p>
+        FreshMart brings you fresh products, quality groceries,
+        and the best weekly deals with exciting savings every day.
+      </p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Customer Services -->
+    <div class="footer-col">
+      <h3>Customer Services</h3>
+
+      <ul>
+        <li><a href="loyalty.html">Loyalty Rewards</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact Information</h3>
+
+      <ul class="footer-contact">
+        <li>
+          <i class="fas fa-location-dot"></i>
+          123 FreshMart Street, Chennai, Tamil Nadu
+        </li>
+
+        <li>
+          <i class="fas fa-phone"></i>
+          +91 98765 43210
+        </li>
+
+        <li>
+          <i class="fas fa-envelope"></i>
+          support@freshmart.com
+        </li>
+
+        <li>
+          <i class="fas fa-clock"></i>
+          Mon - Sun: 8:00 AM - 10:00 PM
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+    <div class="container">
+
+  <div class="footer-bottom-content">
+    <p>© 2026 FreshMart. All Rights Reserved.</p>
+
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+</footer>
+
+<!-- ================= FOOTER END ================= -->
+
+
+  <!-- JS -->
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

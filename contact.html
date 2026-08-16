@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshMart - Supermarket Weekly Deals & Offers</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-content">
+
+
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-location-dot"></i> Find a Store</span>
+      <span><i class="fa-solid fa-clock"></i> Open: 8:00 AM - 10:00 PM</span>
+    </div>
+
+    <div class="topbar-right">
+      <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+
+
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="FreshMart Logo">
+
+    </a>
+
+    <!-- Navigation -->
+    <ul class="nav-menu" id="nav-menu">
+
+      <!-- Home Dropdown -->
+      <li class="dropdown">
+        <a href="#">
+          Home
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+
+      <li><a href="stores.html">Stores</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="loyalty.html">Loyalty Rewards</a></li>
+      <li><a href="contact.html"class="active">Contact</a></li>
+
+      <!-- Mobile Actions -->
+      <li class="mobile-actions">
+        <div class="mobile-action-buttons">
+
+          <button id="rtl-toggle-mobile" class="icon-btn">
+            RTL
+          </button>
+
+          <button id="theme-toggle-mobile" class="icon-btn">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <a href="login.html" class="btn btn-login">
+            Login
+          </a>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- Desktop Actions -->
+    <div class="header-actions">
+
+      <button id="rtl-toggle" class="icon-btn">
+        RTL
+      </button>
+
+      <button id="theme-toggle" class="icon-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <a href="login.html" class="btn btn-login">
+        Login
+      </a>
+
+    </div>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+</div>
+
+</header>
+<!-- ========================================
+     CONTACT HERO BANNER
+======================================== -->
+<section class="contacthero-section">
+  <div class="container">
+
+    <div class="contacthero-layout">
+
+      <!-- Content -->
+      <div class="contacthero-content">
+
+        <div class="contacthero-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Contact</span>
+        </div>
+
+        <span class="contacthero-tag">Get in Touch</span>
+
+        <h1>We’d Love to Hear From You</h1>
+
+        <p>
+          Have a question about orders, deliveries, FreshMart Rewards,
+          store locations, or customer support? Our friendly team is here
+          to help you with everything you need.
+        </p>
+
+        <div class="contacthero-buttons">
+          <a href="#contact-form" class="contacthero-primary-btn">
+            Contact Support
+          </a>
+
+          <a href="stores.html" class="contacthero-secondary-btn">
+            Find a Store
+          </a>
+        </div>
+
+        <div class="contacthero-highlights">
+
+          <div class="contacthero-highlight">
+            <i class="fas fa-headset"></i>
+            <div>
+              <h4>24/7 Customer Support</h4>
+              <p>Always ready to assist you</p>
+            </div>
+          </div>
+
+          <div class="contacthero-highlight">
+            <i class="fas fa-bolt"></i>
+            <div>
+              <h4>Fast Response Time</h4>
+              <p>Average reply within 15 minutes</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Visual -->
+      <div class="contacthero-visual">
+
+        <img src="images/contact-hero.jpg" alt="FreshMart Customer Support">
+
+        <div class="contacthero-card">
+
+          <div class="contacthero-card-top">
+            <span>Customer Support</span>
+            <i class="fas fa-headset"></i>
+          </div>
+
+          <h3>+91 98765 43210</h3>
+
+          <p>
+            support@freshmart.com
+          </p>
+
+          <a href="tel:+919876543210">Call Now</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ========================================
+     CONTACT INFORMATION CARDS
+======================================== -->
+<section class="contactinfo-section">
+  <div class="container">
+
+    <div class="contactinfo-header">
+      <span class="contactinfo-tag">Contact Information</span>
+      <h2>We’re Here to Help You</h2>
+      <p>
+        Reach out to FreshMart through phone, email, or visit one of our
+        stores. Our customer support team is always ready to assist you.
+      </p>
+    </div>
+
+    <div class="contactinfo-grid">
+
+      <!-- Phone -->
+      <div class="contactinfo-card">
+        <div class="contactinfo-icon">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+
+        <div class="contactinfo-content">
+          <h3>Call Us</h3>
+          <p>Speak directly with our customer support team.</p>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="contactinfo-card">
+        <div class="contactinfo-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <div class="contactinfo-content">
+          <h3>Email Us</h3>
+          <p>Send us your questions anytime.</p>
+          <a href="mailto:support@freshmart.com">support@freshmart.com</a>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="contactinfo-card">
+        <div class="contactinfo-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+
+        <div class="contactinfo-content">
+          <h3>Visit Our Store</h3>
+          <p>FreshMart Central Market, Chennai, India.</p>
+          <a href="stores.html">Get Directions</a>
+        </div>
+      </div>
+
+      <!-- Working Hours -->
+      <div class="contactinfo-card">
+        <div class="contactinfo-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+
+        <div class="contactinfo-content">
+          <h3>Support Hours</h3>
+          <p>Monday – Sunday: 8:00 AM – 10:00 PM</p>
+          <a href="#contact-form">Contact Support</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     CONTACT FORM & MAP
+======================================== -->
+<section class="contactform-section" id="contact-form">
+  <div class="container">
+
+    <div class="contactform-header">
+      <span class="contactform-tag">Send Us a Message</span>
+      <h2>Get in Touch with FreshMart</h2>
+      <p>
+        Have a question about your order, delivery, rewards membership,
+        or store locations? Fill out the form below and our support team
+        will get back to you as soon as possible.
+      </p>
+    </div>
+
+    <div class="contactform-layout">
+
+      <!-- Contact Form -->
+      <div class="contactform-form">
+
+        <form>
+
+          <div class="contactform-row">
+
+            <div class="contactform-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="contactform-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email address" required>
+            </div>
+
+          </div>
+
+          <div class="contactform-row">
+
+            <div class="contactform-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Enter your phone number">
+            </div>
+
+            <div class="contactform-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Enter message subject">
+            </div>
+
+          </div>
+
+          <div class="contactform-group">
+            <label>Message</label>
+            <textarea rows="6" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="contactform-btn">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- Map Section -->
+      <div class="contactform-map">
+
+        <div class="contactform-mapbox">
+
+          <iframe
+            src="https://www.google.com/maps?q=Chennai,+Tamil+Nadu,+India&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+        <div class="contactform-storecard">
+
+          <h3>FreshMart Central Market</h3>
+
+          <div class="contactform-storeitem">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Green Street, Chennai, Tamil Nadu, India</span>
+          </div>
+
+          <div class="contactform-storeitem">
+            <i class="fas fa-clock"></i>
+            <span>Open Daily: 8:00 AM – 10:00 PM</span>
+          </div>
+
+          <div class="contactform-storeitem">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 98765 43210</span>
+          </div>
+
+          <a href="stores.html" class="contactform-storebtn">
+            Get Directions
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================
+     CUSTOMER SUPPORT CATEGORIES
+======================================== -->
+<section class="supportcategory-section">
+  <div class="container">
+
+    <div class="supportcategory-header">
+      <span class="supportcategory-tag">How Can We Help?</span>
+      <h2>Choose the Support You Need</h2>
+      <p>
+        Our dedicated support teams are available to help with orders,
+        rewards, returns, and business inquiries. Select the category
+        that best matches your request.
+      </p>
+    </div>
+
+    <div class="supportcategory-grid">
+
+      <!-- Order Support -->
+      <div class="supportcategory-card">
+
+        <div class="supportcategory-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+
+        <h3>Order Support</h3>
+
+        <p>
+          Get help with order tracking, delivery updates, cancellations,
+          and payment-related questions.
+        </p>
+
+        <a href="contact.html#contact-form" class="supportcategory-link">
+          Get Order Help
+        </a>
+
+      </div>
+
+      <!-- Rewards Support -->
+      <div class="supportcategory-card">
+
+        <div class="supportcategory-icon">
+          <i class="fas fa-gift"></i>
+        </div>
+
+        <h3>Rewards Support</h3>
+
+        <p>
+          Questions about reward points, cashback, membership tiers,
+          and exclusive FreshMart Rewards benefits.
+        </p>
+
+        <a href="loyalty.html" class="supportcategory-link">
+          Rewards Assistance
+        </a>
+
+      </div>
+
+      <!-- Returns & Refunds -->
+      <div class="supportcategory-card">
+
+        <div class="supportcategory-icon">
+          <i class="fas fa-undo-alt"></i>
+        </div>
+
+        <h3>Returns & Refunds</h3>
+
+        <p>
+          Report damaged items, request returns, exchange products,
+          or check your refund status.
+        </p>
+
+        <a href="contact.html#contact-form" class="supportcategory-link">
+          Start a Return
+        </a>
+
+      </div>
+
+      <!-- Business Inquiries -->
+      <div class="supportcategory-card">
+
+        <div class="supportcategory-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+
+        <h3>Business Inquiries</h3>
+
+        <p>
+          Contact us for partnerships, bulk orders, vendor support,
+          and corporate grocery solutions.
+        </p>
+
+        <a href="contact.html#contact-form" class="supportcategory-link">
+          Contact Business Team
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER START ================= -->
+
+<footer class="footer">
+
+  <!-- Newsletter -->
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+
+
+    <div class="newsletter-content">
+      <h2>Stay Updated with Weekly Deals</h2>
+      <p>Subscribe to receive exclusive discounts, fresh offers, and supermarket deals every week.</p>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn btn-subscribe">
+        Subscribe
+      </button>
+    </form>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- Main Footer -->
+
+  <div class="footer-main">
+    <div class="container">
+
+  <div class="footer-grid">
+
+    <!-- Logo & About -->
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.png" alt="FreshMart Logo">
+      </a>
+
+      <p>
+        FreshMart brings you fresh products, quality groceries,
+        and the best weekly deals with exciting savings every day.
+      </p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Customer Services -->
+    <div class="footer-col">
+      <h3>Customer Services</h3>
+
+      <ul>
+        <li><a href="loyalty.html">Loyalty Rewards</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact Information</h3>
+
+      <ul class="footer-contact">
+        <li>
+          <i class="fas fa-location-dot"></i>
+          123 FreshMart Street, Chennai, Tamil Nadu
+        </li>
+
+        <li>
+          <i class="fas fa-phone"></i>
+          +91 98765 43210
+        </li>
+
+        <li>
+          <i class="fas fa-envelope"></i>
+          support@freshmart.com
+        </li>
+
+        <li>
+          <i class="fas fa-clock"></i>
+          Mon - Sun: 8:00 AM - 10:00 PM
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+    <div class="container">
+
+  <div class="footer-bottom-content">
+    <p>© 2026 FreshMart. All Rights Reserved.</p>
+
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+</footer>
+
+<!-- ================= FOOTER END ================= -->
+
+
+  <!-- JS -->
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

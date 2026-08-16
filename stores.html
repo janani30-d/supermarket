@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshMart - Supermarket Weekly Deals & Offers</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-content">
+
+
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-location-dot"></i> Find a Store</span>
+      <span><i class="fa-solid fa-clock"></i> Open: 8:00 AM - 10:00 PM</span>
+    </div>
+
+    <div class="topbar-right">
+      <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+
+
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="FreshMart Logo">
+
+    </a>
+
+    <!-- Navigation -->
+    <ul class="nav-menu" id="nav-menu">
+
+      <!-- Home Dropdown -->
+      <li class="dropdown">
+        <a href="#">
+          Home
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+
+      <li><a href="stores.html"class="active">Stores</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="loyalty.html">Loyalty Rewards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <!-- Mobile Actions -->
+      <li class="mobile-actions">
+        <div class="mobile-action-buttons">
+
+          <button id="rtl-toggle-mobile" class="icon-btn">
+            RTL
+          </button>
+
+          <button id="theme-toggle-mobile" class="icon-btn">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <a href="login.html" class="btn btn-login">
+            Login
+          </a>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- Desktop Actions -->
+    <div class="header-actions">
+
+      <button id="rtl-toggle" class="icon-btn">
+        RTL
+      </button>
+
+      <button id="theme-toggle" class="icon-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <a href="login.html" class="btn btn-login">
+        Login
+      </a>
+
+    </div>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+</div>
+
+</header>
+<!-- ========================================
+     STORE HERO BANNER
+======================================== -->
+<section class="store-hero">
+
+  <div class="container">
+
+    <div class="store-hero-content">
+
+      <div class="store-text">
+
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Stores</span>
+        </div>
+
+        <span class="hero-badge">
+          FreshMart Store Network
+        </span>
+
+        <h1>Visit Your Nearest FreshMart Store</h1>
+
+        <p>
+          Explore our modern supermarket stores across Tamil Nadu featuring
+          fresh groceries, organic produce, bakery products, dairy essentials,
+          and a premium shopping experience for the whole family.
+        </p>
+
+        <div class="store-buttons">
+
+          <a href="#locations" class="btn-primary">
+            Find a Store
+          </a>
+
+          <a href="contact.html" class="btn-outline">
+            Contact Us
+          </a>
+
+        </div>
+
+        <div class="store-stats">
+
+          <div class="stat-item">
+            <h3>25+</h3>
+            <p>Store Locations</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>1M+</h3>
+            <p>Happy Customers</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>5000+</h3>
+            <p>Fresh Products</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="storehero-image">
+
+        <img src="images/store-hero.jpg" alt="FreshMart Supermarket Store">
+
+        <div class="storehero-card">
+          <i class="fas fa-location-dot"></i>
+
+          <div>
+            <h4>Chennai Flagship Store</h4>
+            <p>Anna Nagar • Open Today 8 AM - 10 PM</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================================
+     OUR STORE NETWORK
+======================================== -->
+<section class="network-section">
+  <div class="container">
+
+    <div class="network-header">
+      <span class="network-badge">Our Presence</span>
+      <h2>FreshMart Store Network Across Tamil Nadu</h2>
+      <p>
+        With multiple locations across major cities, FreshMart brings fresh
+        groceries, premium quality products, and a convenient shopping experience
+        closer to your neighborhood.
+      </p>
+    </div>
+
+    <div class="network-layout">
+
+      <div class="network-image-area">
+        <img src="images/store-network.jpg" alt="FreshMart Store Network">
+      </div>
+
+      <div class="network-info-area">
+
+        <div class="network-info-card">
+          <h3>Serving Communities with Freshness</h3>
+          <p>
+            Our stores are designed to provide farm-fresh produce, quality groceries,
+            bakery products, dairy essentials, and household items under one roof
+            with exceptional customer service.
+          </p>
+        </div>
+
+        <div class="network-stats-grid">
+
+          <div class="network-stat-box">
+            <h4>25+</h4>
+            <p>Store Locations</p>
+          </div>
+
+          <div class="network-stat-box">
+            <h4>12</h4>
+            <p>Major Cities</p>
+          </div>
+
+          <div class="network-stat-box">
+            <h4>1M+</h4>
+            <p>Customers Served</p>
+          </div>
+
+          <div class="network-stat-box">
+            <h4>5000+</h4>
+            <p>Fresh Products</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     FRESHMART STORE LOCATOR
+======================================== -->
+<section class="locator-section" id="store-locator">
+  <div class="container">
+
+    <div class="locator-heading">
+      <span class="locator-tag">Store Locator</span>
+      <h2>Find Your Nearest FreshMart Store</h2>
+      <p>
+        Visit our conveniently located FreshMart stores across Tamil Nadu and
+        enjoy fresh groceries, bakery products, organic produce, and premium
+        supermarket services every day.
+      </p>
+    </div>
+
+    <div class="locator-grid">
+
+      <!-- Chennai -->
+      <article class="locator-card">
+        <div class="locator-photo">
+          <img src="images/locate-chennai.jpg" alt="FreshMart Chennai">
+        </div>
+
+        <div class="locator-details">
+          <h3>Chennai Flagship Store</h3>
+
+          <div class="locator-info">
+            <p><i class="fas fa-location-dot"></i> Anna Nagar, Chennai</p>
+            <p><i class="fas fa-clock"></i> Open: 8:00 AM - 10:00 PM</p>
+          </div>
+
+          <p class="locator-description">
+            A complete shopping destination with fresh vegetables, fruits,
+            bakery items, dairy products, and same-day pickup services.
+          </p>
+
+          <a href="#" class="locator-button">
+            Get Directions
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Coimbatore -->
+      <article class="locator-card">
+        <div class="locator-photo">
+          <img src="images/locate-coimbatore.jpg" alt="FreshMart Coimbatore">
+        </div>
+
+        <div class="locator-details">
+          <h3>Coimbatore Premium Store</h3>
+
+          <div class="locator-info">
+            <p><i class="fas fa-location-dot"></i> RS Puram, Coimbatore</p>
+            <p><i class="fas fa-clock"></i> Open: 8:00 AM - 10:00 PM</p>
+          </div>
+
+          <p class="locator-description">
+            Discover organic groceries, imported products, gourmet foods,
+            and a premium supermarket shopping experience.
+          </p>
+
+          <a href="#" class="locator-button">
+            Get Directions
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Madurai -->
+      <article class="locator-card">
+        <div class="locator-photo">
+          <img src="images/locate-madurai.jpg" alt="FreshMart Madurai">
+        </div>
+
+        <div class="locator-details">
+          <h3>Madurai Family Store</h3>
+
+          <div class="locator-info">
+            <p><i class="fas fa-location-dot"></i> KK Nagar, Madurai</p>
+            <p><i class="fas fa-clock"></i> Open: 7:30 AM - 9:30 PM</p>
+          </div>
+
+          <p class="locator-description">
+            Perfect for daily grocery shopping with fresh produce,
+            local specialties, and family-friendly customer service at store.
+          </p>
+
+          <a href="#" class="locator-button">
+            Get Directions
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Trichy -->
+      <article class="locator-card">
+        <div class="locator-photo">
+          <img src="images/locate-trichy.jpg" alt="FreshMart Trichy">
+        </div>
+
+        <div class="locator-details">
+          <h3>Trichy Neighborhood Store</h3>
+
+          <div class="locator-info">
+            <p><i class="fas fa-location-dot"></i> Cantonment, Trichy</p>
+            <p><i class="fas fa-clock"></i> Open: 8:00 AM - 10:00 PM</p>
+          </div>
+
+          <p class="locator-description">
+            Convenient neighborhood shopping with fresh groceries,
+            bakery products, beverages, and home delivery support fastly.
+          </p>
+
+          <a href="#" class="locator-button">
+            Get Directions
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     STORE FACILITIES & SERVICES
+======================================== -->
+<section class="facility-section">
+  <div class="container">
+
+    <div class="facility-header">
+      <span class="facility-tag">Store Services</span>
+      <h2>Everything You Need Under One Roof</h2>
+      <p>
+        Every FreshMart store is designed to provide a convenient, comfortable,
+        and premium shopping experience with fresh products, modern facilities,
+        and customer-friendly services.
+      </p>
+    </div>
+
+    <div class="facility-grid">
+
+      <div class="facility-card">
+        <div class="facility-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3>Fresh Produce</h3>
+        <p>
+          Farm-fresh fruits and vegetables delivered daily from trusted local
+          growers and quality suppliers.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <div class="facility-icon">
+          <i class="fas fa-bread-slice"></i>
+        </div>
+        <h3>In-Store Bakery</h3>
+        <p>
+          Freshly baked bread, cakes, pastries, cookies, and desserts prepared
+          throughout the day. Ready to eat.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <div class="facility-icon">
+          <i class="fas fa-circle-check"></i>
+        </div>
+        <h3>Quality Assurance</h3>
+        <p>
+          Carefully inspected products with freshness and quality standards
+          maintained across every department.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <div class="facility-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3>Home Delivery</h3>
+        <p>
+          Fast local delivery and convenient pickup options available from
+          selected FreshMart locations.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <div class="facility-icon">
+          <i class="fas fa-car"></i>
+        </div>
+        <h3>Free Parking</h3>
+        <p>
+          Spacious parking facilities available at most FreshMart stores for
+          a hassle-free shopping experience.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <div class="facility-icon">
+          <i class="fas fa-credit-card"></i>
+        </div>
+        <h3>Easy Payments</h3>
+        <p>
+          Secure payment options including UPI, cards, wallets, cash, and
+          contactless checkout facilities.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================
+     INSIDE OUR FRESHMART STORES
+======================================== -->
+
+<section class="showcase-section">
+  <div class="container">
+
+```
+<div class="showcase-header">
+  <span class="showcase-tag">Store Experience</span>
+  <h2>Inside Our FreshMart Stores</h2>
+  <p>
+    Discover the FreshMart shopping experience through our modern store
+    interiors, fresh produce sections, artisan bakery counters, and
+    customer-friendly shopping environment.
+  </p>
+</div>
+
+<div class="showcase-layout">
+
+  <!-- Featured Image -->
+  <div class="showcase-feature">
+    <img src="images/showcase-main.jpg" alt="FreshMart Store Interior">
+
+    <div class="showcase-overlay">
+      <h3>Fresh & Modern Shopping</h3>
+      <p>
+        Spacious aisles, premium grocery collections, and a comfortable
+        shopping experience for every customer.
+      </p>
+    </div>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="showcase-gallery">
+
+    <div class="showcase-card">
+      <img src="images/showcase-1.jpg" alt="Fresh Fruits">
+      <div class="showcase-overlay">
+        <h3>Fresh Fruits</h3>
+        <p>Daily farm-fresh seasonal fruits</p>
+      </div>
+    </div>
+
+    <div class="showcase-card">
+      <img src="images/showcase-2.jpg" alt="Bakery Section">
+      <div class="showcase-overlay">
+        <h3>Bakery Corner</h3>
+        <p>Fresh bread and pastries</p>
+      </div>
+    </div>
+
+    <div class="showcase-card">
+      <img src="images/showcase-3.jpg" alt="Organic Products">
+      <div class="showcase-overlay">
+        <h3>Organic Products</h3>
+        <p>Healthy grocery selections</p>
+      </div>
+    </div>
+
+    <div class="showcase-card">
+      <img src="images/showcase-4.jpg" alt="Dairy & Beverages">
+      <div class="showcase-overlay">
+        <h3>Dairy & Beverages</h3>
+        <p>Fresh dairy and drink collections</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="showcase-footer">
+  <a href="gallery.html" class="btn-primary">
+    View Full Store Gallery
+  </a>
+</div>
+```
+
+  </div>
+</section>
+<!-- ========================================
+     STORE HOURS & CONTACT
+======================================== -->
+<section class="hours-section">
+  <div class="container">
+
+    <div class="hours-header">
+      <span class="hours-tag">Visit FreshMart</span>
+      <h2>Store Timings & Contact Information</h2>
+      <p>
+        We’re here to make your shopping experience easy and convenient.
+        Visit your nearest FreshMart store during our operating hours or
+        contact our customer support team for assistance.
+      </p>
+    </div>
+
+    <div class="hours-layout">
+
+      <!-- Store Hours -->
+      <div class="hours-card">
+
+        <div class="hours-card-head">
+          <i class="fas fa-clock"></i>
+          <h3>Opening Hours</h3>
+        </div>
+
+        <div class="hours-list">
+
+          <div class="hours-row">
+            <span>Monday - Friday</span>
+            <strong>8:00 AM - 10:00 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Saturday</span>
+            <strong>8:00 AM - 10:30 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Sunday</span>
+            <strong>8:00 AM - 9:30 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Public Holidays</span>
+            <strong>9:00 AM - 8:00 PM</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Contact Details -->
+      <div class="hours-card">
+
+        <div class="hours-card-head">
+          <i class="fas fa-phone-volume"></i>
+          <h3>Contact & Store Support</h3>
+        </div>
+
+        <div class="hours-contact-list">
+
+          <div class="hours-contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <span>Customer Care</span>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="hours-contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span>Email Support</span>
+              <p>stores@freshmart.com</p>
+            </div>
+          </div>
+
+          <div class="hours-contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <span>Head Office</span>
+              <p>Anna Nagar, Chennai, Tamil Nadu</p>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="contact.html" class="hours-button">
+          Find Your Nearest Store
+          <i class="fas fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ========================================
+     VISIT FRESHMART TODAY
+======================================== -->
+<section class="visit-section">
+  <div class="container">
+
+    <div class="visit-wrapper">
+
+      <div class="visit-content">
+
+        <span class="visit-badge">FreshMart Stores</span>
+
+        <h2>Visit FreshMart Today & Enjoy a Better Shopping Experience</h2>
+
+        <p>
+          Discover fresh groceries, premium bakery products, organic produce,
+          dairy essentials, and everyday household items at your nearest
+          FreshMart store. We’re committed to quality, freshness, and
+          exceptional customer service.
+        </p>
+
+        <div class="visit-features">
+
+          <div class="visit-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Fresh Products Daily</span>
+          </div>
+
+          <div class="visit-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Premium Quality Guaranteed</span>
+          </div>
+
+          <div class="visit-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Friendly Customer Service</span>
+          </div>
+
+        </div>
+
+        <div class="visit-actions">
+
+          <a href="stores.html" class="visit-primary-btn">
+            <i class="fas fa-location-dot"></i>
+            Find a Store
+          </a>
+
+          <a href="contact.html" class="visit-secondary-btn">
+            <i class="fas fa-phone"></i>
+            Contact Us
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="visit-visual">
+
+        <img src="images/visit-freshmart.jpg" alt="FreshMart Shopping Experience">
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER START ================= -->
+
+<footer class="footer">
+
+  <!-- Newsletter -->
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+
+
+    <div class="newsletter-content">
+      <h2>Stay Updated with Weekly Deals</h2>
+      <p>Subscribe to receive exclusive discounts, fresh offers, and supermarket deals every week.</p>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn btn-subscribe">
+        Subscribe
+      </button>
+    </form>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- Main Footer -->
+
+  <div class="footer-main">
+    <div class="container">
+
+  <div class="footer-grid">
+
+    <!-- Logo & About -->
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.png" alt="FreshMart Logo">
+      </a>
+
+      <p>
+        FreshMart brings you fresh products, quality groceries,
+        and the best weekly deals with exciting savings every day.
+      </p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Customer Services -->
+    <div class="footer-col">
+      <h3>Customer Services</h3>
+
+      <ul>
+        <li><a href="loyalty.html">Loyalty Rewards</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact Information</h3>
+
+      <ul class="footer-contact">
+        <li>
+          <i class="fas fa-location-dot"></i>
+          123 FreshMart Street, Chennai, Tamil Nadu
+        </li>
+
+        <li>
+          <i class="fas fa-phone"></i>
+          +91 98765 43210
+        </li>
+
+        <li>
+          <i class="fas fa-envelope"></i>
+          support@freshmart.com
+        </li>
+
+        <li>
+          <i class="fas fa-clock"></i>
+          Mon - Sun: 8:00 AM - 10:00 PM
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+    <div class="container">
+
+  <div class="footer-bottom-content">
+    <p>© 2026 FreshMart. All Rights Reserved.</p>
+
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+</footer>
+
+<!-- ================= FOOTER END ================= -->
+
+
+  <!-- JS -->
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

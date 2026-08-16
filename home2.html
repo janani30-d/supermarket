@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshMart - Supermarket Weekly Deals & Offers</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-content">
+
+
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-location-dot"></i> Find a Store</span>
+      <span><i class="fa-solid fa-clock"></i> Open: 8:00 AM - 10:00 PM</span>
+    </div>
+
+    <div class="topbar-right">
+      <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+
+
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="FreshMart Logo">
+
+    </a>
+
+    <!-- Navigation -->
+    <ul class="nav-menu" id="nav-menu">
+
+      <!-- Home Dropdown -->
+      <li class="dropdown">
+        <a href="#"class="active">
+          Home
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html"class="active">Home 2</a></li>
+        </ul>
+      </li>
+
+      <li><a href="stores.html">Stores</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      
+      <li><a href="loyalty.html">Loyalty Rewards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <!-- Mobile Actions -->
+      <li class="mobile-actions">
+        <div class="mobile-action-buttons">
+
+          <button id="rtl-toggle-mobile" class="icon-btn">
+            RTL
+          </button>
+
+          <button id="theme-toggle-mobile" class="icon-btn">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <a href="login.html" class="btn btn-login">
+            Login
+          </a>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- Desktop Actions -->
+    <div class="header-actions">
+
+      <button id="rtl-toggle" class="icon-btn">
+        RTL
+      </button>
+
+      <button id="theme-toggle" class="icon-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <a href="login.html" class="btn btn-login">
+        Login
+      </a>
+
+    </div>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+</div>
+
+</header>
+
+
+<!-- ========================================
+     HOME 2 HERO SECTION
+======================================== -->
+<section class="hero2-section">
+  <div class="container">
+
+    <div class="hero2-wrapper">
+
+      <!-- Left Content -->
+      <div class="hero2-content">
+
+        <span class="hero2-badge">
+          <i class="fas fa-bolt"></i>
+          Fresh Delivery in 30 Minutes
+        </span>
+
+        <h1>Fresh groceries delivered straight to your doorstep</h1>
+
+        <p>
+          Shop fresh fruits, vegetables, dairy products, bakery items,
+          beverages, and daily essentials with exclusive discounts and
+          lightning-fast delivery.
+        </p>
+
+        <!-- Search Bar -->
+        <form class="hero2-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search fresh fruits, vegetables, dairy, and more...">
+          <button type="submit">Search</button>
+        </form>
+
+        <!-- CTA Buttons -->
+        <div class="hero2-buttons">
+          <a href="shop.html" class="btn-primary">
+            <i class="fas fa-cart-shopping"></i>
+            Shop Now
+          </a>
+
+          <a href="weekly-deals.html" class="btn-outline">
+            View Deals
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero2-stats">
+
+          <div class="hero2-stat">
+            <h3>10K+</h3>
+            <p>Fresh Products</p>
+          </div>
+
+          <div class="hero2-stat">
+            <h3>30 Min</h3>
+            <p>Fast Delivery</p>
+          </div>
+
+          <div class="hero2-stat">
+            <h3>4.9★</h3>
+            <p>Customer Rating</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Image -->
+      <div class="hero2-image">
+
+        <div class="hero2-offer">
+          <span>Save up to</span>
+          <strong>40% OFF</strong>
+          <p>On fresh groceries</p>
+        </div>
+
+        <img src="images/home2-hero.jpg" alt="Fresh Grocery Delivery">
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================
+     TODAY’S FRESH DEALS
+======================================== -->
+<section class="deals-section">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-badge">Today’s Deals</span>
+      <h2>Fresh Deals You Can’t Miss Today</h2>
+      <p>
+        Enjoy limited-time discounts on fresh vegetables, fruits, dairy products,
+        and daily essentials with exclusive savings available today.
+      </p>
+    </div>
+
+    <div class="deals-wrapper">
+
+      <!-- Featured Deal -->
+      <div class="featured-deal">
+
+        <span class="deal-tag">Up to 30% OFF</span>
+
+        <h3>Fresh Vegetables Special Offer</h3>
+
+        <p>
+          Farm-fresh vegetables delivered daily at unbeatable prices.
+          Shop today and save more on your healthy grocery essentials.
+        </p>
+
+        <div class="deal-countdown">
+          <div>
+            <strong>02</strong>
+            <span>Days</span>
+          </div>
+          <div>
+            <strong>14</strong>
+            <span>Hours</span>
+          </div>
+          <div>
+            <strong>36</strong>
+            <span>Minutes</span>
+          </div>
+        </div>
+
+        <a href="shop.html" class="btn-primary">
+          Shop Fresh Deals
+        </a>
+
+        <div class="featured-image">
+          <img src="images/deal-banner.png" alt="Fresh Vegetables Offer">
+        </div>
+
+      </div>
+
+      <!-- Deal Products -->
+      <div class="deal-products">
+
+        <div class="deal-card">
+          <span class="discount-badge">-25%</span>
+          <img src="images/deal-1.png" alt="Organic Tomatoes">
+          <h4>Organic Tomatoes</h4>
+          <div class="deal-price">
+            <span class="new-price">$2.99</span>
+            <span class="old-price">$3.99</span>
+          </div>
+          <a href="shop.html" class="deal-btn">Add to Cart</a>
+        </div>
+
+        <div class="deal-card">
+          <span class="discount-badge">-20%</span>
+          <img src="images/deal-2.png" alt="Fresh Spinach">
+          <h4>Fresh Spinach</h4>
+          <div class="deal-price">
+            <span class="new-price">$1.79</span>
+            <span class="old-price">$2.49</span>
+          </div>
+          <a href="shop.html" class="deal-btn">Add to Cart</a>
+        </div>
+
+        <div class="deal-card">
+          <span class="discount-badge">-15%</span>
+          <img src="images/deal-3.png" alt="Sweet Oranges">
+          <h4>Sweet Oranges</h4>
+          <div class="deal-price">
+            <span class="new-price">$4.50</span>
+            <span class="old-price">$5.20</span>
+          </div>
+          <a href="shop.html" class="deal-btn">Add to Cart</a>
+        </div>
+
+        <div class="deal-card">
+          <span class="discount-badge">-18%</span>
+          <img src="images/deal-4.png" alt="Farm Fresh Milk">
+          <h4>Farm Fresh Milk</h4>
+          <div class="deal-price">
+            <span class="new-price">$3.20</span>
+            <span class="old-price">$3.80</span>
+          </div>
+          <a href="shop.html" class="deal-btn">Add to Cart</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     FRESHMART STORE LOCATIONS
+======================================== -->
+<section class="stores-section">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-badge">Our Stores</span>
+      <h2>Find a FreshMart Store Near You</h2>
+      <p>
+        Visit our stores across Tamil Nadu and enjoy fresh groceries,
+        exclusive local offers, and a premium shopping experience.
+      </p>
+    </div>
+
+    <div class="stores-grid">
+
+      <!-- Store 1 -->
+      <div class="store-card">
+        <div class="store-image">
+          <img src="images/store-chennai.jpg" alt="Chennai Store">
+        </div>
+
+        <div class="store-content">
+          <h3>Chennai</h3>
+
+          <p>
+            <i class="fas fa-location-dot"></i>
+            Anna Nagar, Chennai, Tamil Nadu
+          </p>
+
+          <p>
+            <i class="fas fa-clock"></i>
+            Open: 8:00 AM - 10:00 PM
+          </p>
+
+          <p>
+            <i class="fas fa-phone"></i>
+            +91 98765 43210
+          </p>
+
+          <a href="#" class="store-btn">
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Store 2 -->
+      <div class="store-card">
+        <div class="store-image">
+          <img src="images/store-coimbatore.jpg" alt="Coimbatore Store">
+        </div>
+
+        <div class="store-content">
+          <h3>Coimbatore</h3>
+
+          <p>
+            <i class="fas fa-location-dot"></i>
+            RS Puram, Coimbatore, Tamil Nadu
+          </p>
+
+          <p>
+            <i class="fas fa-clock"></i>
+            Open: 8:00 AM - 10:00 PM
+          </p>
+
+          <p>
+            <i class="fas fa-phone"></i>
+            +91 98765 43211
+          </p>
+
+          <a href="#" class="store-btn">
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Store 3 -->
+      <div class="store-card">
+        <div class="store-image">
+          <img src="images/store-madurai.jpg" alt="Madurai Store">
+        </div>
+
+        <div class="store-content">
+          <h3>Madurai</h3>
+
+          <p>
+            <i class="fas fa-location-dot"></i>
+            KK Nagar, Madurai, Tamil Nadu
+          </p>
+
+          <p>
+            <i class="fas fa-clock"></i>
+            Open: 8:00 AM - 10:00 PM
+          </p>
+
+          <p>
+            <i class="fas fa-phone"></i>
+            +91 98765 43212
+          </p>
+
+          <a href="#" class="store-btn">
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Store 4 -->
+      <div class="store-card">
+        <div class="store-image">
+          <img src="images/store-trichy.jpg" alt="Trichy Store">
+        </div>
+
+        <div class="store-content">
+          <h3>Trichy</h3>
+
+          <p>
+            <i class="fas fa-location-dot"></i>
+            Cantonment, Trichy, Tamil Nadu
+          </p>
+
+          <p>
+            <i class="fas fa-clock"></i>
+            Open: 8:00 AM - 10:00 PM
+          </p>
+
+          <p>
+            <i class="fas fa-phone"></i>
+            +91 98765 43213
+          </p>
+
+          <a href="#" class="store-btn">
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     FRESHMART MEMBERSHIP & REWARDS
+======================================== -->
+<section class="membership-section">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-badge">FreshMart Plus</span>
+      <h2>Unlock Exclusive Grocery Rewards</h2>
+      <p>
+        Join FreshMart Plus and enjoy member-only discounts, free delivery,
+        reward points, and priority shopping benefits.
+      </p>
+    </div>
+
+    <!-- Featured Membership Card -->
+    <div class="membership-plan">
+
+      <div class="plan-badge">Most Popular</div>
+
+      <h3>FreshMart Plus</h3>
+
+      <div class="plan-price">
+        <span class="currency">₹</span>
+        <strong>99</strong>
+        <span class="duration">/ month</span>
+      </div>
+
+      <p class="plan-description">
+        Save more on every grocery order with premium membership benefits.
+      </p>
+
+      <ul class="plan-features">
+        <li><i class="fas fa-check-circle"></i> Unlimited reward points</li>
+        <li><i class="fas fa-check-circle"></i> Exclusive weekly member deals</li>
+        <li><i class="fas fa-check-circle"></i> Free delivery on eligible orders</li>
+        <li><i class="fas fa-check-circle"></i> Priority customer support</li>
+        <li><i class="fas fa-check-circle"></i> Early access to festive sales</li>
+      </ul>
+
+      <a href="membership.html" class="btn-primary">
+        Join FreshMart Plus
+      </a>
+
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="membership-benefits">
+
+      <div class="membership-card">
+        <i class="fas fa-gift"></i>
+        <h3>Earn Reward Points</h3>
+        <p>
+          Collect points on every purchase and redeem them for discounts
+          on future grocery orders.
+        </p>
+      </div>
+
+      <div class="membership-card">
+        <i class="fas fa-percent"></i>
+        <h3>Exclusive Discounts</h3>
+        <p>
+          Access member-only offers across fruits, vegetables, dairy,
+          bakery, and household essentials.
+        </p>
+      </div>
+
+      <div class="membership-card">
+        <i class="fas fa-truck"></i>
+        <h3>Free Delivery</h3>
+        <p>
+          Enjoy free delivery on eligible orders with faster checkout
+          and priority customer support.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     ORGANIC & HEALTHY COLLECTION
+======================================== -->
+<section class="organic-section">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-badge">Organic Collection</span>
+      <h2>Fresh &amp; Healthy Organic Products</h2>
+      <p>
+        Discover premium organic vegetables, fresh fruits, healthy snacks,
+        and natural grocery essentials sourced directly from trusted farms.
+      </p>
+    </div>
+
+    <div class="organic-wrapper">
+
+      <!-- Featured Card 1 -->
+      <div class="organic-featured">
+        <div class="organic-content">
+          <span class="organic-tag">100% Organic</span>
+          <h3>Fresh Organic Vegetables</h3>
+          <p>
+            Handpicked fresh vegetables with no harmful chemicals,
+            delivered directly from local organic farms.
+          </p>
+          <a href="shop.html" class="btn-primary">
+            Shop Vegetables
+          </a>
+        </div>
+
+        <div class="organic-image">
+          <img src="images/organic-vegetables.jpg" alt="Organic Vegetables">
+        </div>
+      </div>
+
+      <!-- Featured Card 2 -->
+      <div class="organic-featured">
+        <div class="organic-content">
+          <span class="organic-tag">Healthy Choice</span>
+          <h3>Seasonal Fruits &amp; Wellness Foods</h3>
+          <p>
+            Enjoy fresh seasonal fruits, dry fruits, juices,
+            and nutrition-rich healthy food products.
+          </p>
+          <a href="shop.html" class="btn-primary">
+            Shop Fruits
+          </a>
+        </div>
+
+        <div class="organic-image">
+          <img src="images/organic-fruits.png" alt="Healthy Fruits">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Small Categories -->
+    <div class="organic-grid">
+
+      <div class="organic-card">
+        <img src="images/organic-category1.png" alt="Leafy Greens">
+        <h4>Leafy Greens</h4>
+      </div>
+
+      <div class="organic-card">
+        <img src="images/organic-category2.png" alt="Organic Fruits">
+        <h4>Organic Fruits</h4>
+      </div>
+
+      <div class="organic-card">
+        <img src="images/organic-category3.png" alt="Healthy Snacks">
+        <h4>Healthy Snacks</h4>
+      </div>
+
+      <div class="organic-card">
+        <img src="images/organic-category4.png" alt="Natural Juices">
+        <h4>Natural Juices</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================
+     FRESHMART COMMUNITY GALLERY
+======================================== -->
+<section class="gallery-section">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-badge">FreshMart Community</span>
+      <h2>Fresh Moments from Our Community</h2>
+      <p>
+        Discover healthy meals, fresh groceries, seasonal produce, and inspiring
+        moments shared by our amazing FreshMart customers every day.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <a href="#" class="gallery-item">
+        <img src="images/gallery-1.jpg" alt="Fresh Vegetables">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="#" class="gallery-item">
+        <img src="images/gallery-2.jpg" alt="Healthy Breakfast">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="#" class="gallery-item">
+        <img src="images/gallery-3.jpg" alt="Family Shopping">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="#" class="gallery-item">
+        <img src="images/gallery-4.jpg" alt="Organic Fruits">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="#" class="gallery-item">
+        <img src="images/gallery-5.jpg" alt="Fresh Bakery">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="#" class="gallery-item">
+        <img src="images/gallery-6.jpg" alt="Healthy Salad">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="gallery-footer">
+
+      <div class="gallery-text">
+        <h3>Share Your FreshMart Moments</h3>
+        <p>
+          Tag <strong>@FreshMart</strong> and use
+          <strong>#FreshMartFresh</strong> for a chance to be featured
+          in our community gallery.
+        </p>
+      </div>
+
+      <a href="https://instagram.com" target="_blank" class="btn-primary">
+        <i class="fab fa-instagram"></i>
+        Follow @FreshMart
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================
+     FRESHMART WEEKLY SAVINGS BANNER
+======================================== -->
+<section class="savings-section">
+  <div class="container">
+
+    <div class="savings-banner">
+
+      <div class="savings-content">
+
+        <span class="savings-badge">
+          This Week Only
+        </span>
+
+        <h2>Save Up to 50% on Selected Grocery Products</h2>
+
+        <p>
+          Enjoy incredible savings on fresh vegetables, fruits, dairy products,
+          bakery items, beverages, and household essentials with limited-time
+          weekly offers.
+        </p>
+
+        <div class="savings-countdown">
+
+          <div class="count-item">
+            <strong>02</strong>
+            <span>Days</span>
+          </div>
+
+          <div class="count-item">
+            <strong>14</strong>
+            <span>Hours</span>
+          </div>
+
+          <div class="count-item">
+            <strong>36</strong>
+            <span>Minutes</span>
+          </div>
+
+        </div>
+
+        <div class="savings-buttons">
+          <a href="shop.html" class="btn-primary">
+            <i class="fas fa-cart-shopping"></i>
+            Shop Weekly Deals
+          </a>
+
+          <a href="membership.html" class="btn-outline">
+            Become a Member
+          </a>
+        </div>
+
+      </div>
+
+      <div class="savings-image">
+
+        <img src="images/weekly-savings.png" alt="Weekly Grocery Savings">
+
+        <div class="savings-card">
+          <span>Member Exclusive</span>
+          <strong>Free Delivery</strong>
+          <p>On orders above ₹499</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER START ================= -->
+
+<footer class="footer">
+
+  <!-- Newsletter -->
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+
+
+    <div class="newsletter-content">
+      <h2>Stay Updated with Weekly Deals</h2>
+      <p>Subscribe to receive exclusive discounts, fresh offers, and supermarket deals every week.</p>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn btn-subscribe">
+        Subscribe
+      </button>
+    </form>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- Main Footer -->
+
+  <div class="footer-main">
+    <div class="container">
+
+  <div class="footer-grid">
+
+    <!-- Logo & About -->
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.png" alt="FreshMart Logo">
+      </a>
+
+      <p>
+        FreshMart brings you fresh products, quality groceries,
+        and the best weekly deals with exciting savings every day.
+      </p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Customer Services -->
+    <div class="footer-col">
+      <h3>Customer Services</h3>
+
+      <ul>
+        <li><a href="loyalty.html">Loyalty Rewards</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact Information</h3>
+
+      <ul class="footer-contact">
+        <li>
+          <i class="fas fa-location-dot"></i>
+          123 FreshMart Street, Chennai, Tamil Nadu
+        </li>
+
+        <li>
+          <i class="fas fa-phone"></i>
+          +91 98765 43210
+        </li>
+
+        <li>
+          <i class="fas fa-envelope"></i>
+          support@freshmart.com
+        </li>
+
+        <li>
+          <i class="fas fa-clock"></i>
+          Mon - Sun: 8:00 AM - 10:00 PM
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+    <div class="container">
+
+  <div class="footer-bottom-content">
+    <p>© 2026 FreshMart. All Rights Reserved.</p>
+
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+</footer>
+
+<!-- ================= FOOTER END ================= -->
+
+
+  <!-- JS -->
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
