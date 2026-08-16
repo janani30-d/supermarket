@@ -168,9 +168,11 @@ document.addEventListener('click', (e) => {
 
 /*********HOME1********/
 
-// ========================================
-// HERO SLIDER
-// ========================================
+/******* HOME1 ********/
+
+/* ========================================
+   HERO SLIDER
+======================================== */
 
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
@@ -180,110 +182,142 @@ const nextBtn = document.querySelector(".next-slide");
 let currentSlide = 0;
 let slideInterval;
 
-// Show slide
-function showSlide(index) {
+/* Only run slider if Home 1 slider exists */
+if (slides.length > 0) {
 
-  slides.forEach(slide => slide.classList.remove("active"));
-  dots.forEach(dot => dot.classList.remove("active"));
+    // Show slide
+    function showSlide(index) {
 
-  slides[index].classList.add("active");
-  dots[index].classList.add("active");
+        slides.forEach(slide => {
+            slide.classList.remove("active");
+        });
 
-}
+        dots.forEach(dot => {
+            dot.classList.remove("active");
+        });
 
-// Next slide
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
+        slides[index].classList.add("active");
 
-// Previous slide
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
-
-// Auto slide
-function startSlider() {
-  slideInterval = setInterval(nextSlide, 5000);
-}
-
-// Stop auto slide
-function stopSlider() {
-  clearInterval(slideInterval);
-}
-
-// Arrow buttons
-nextBtn?.addEventListener("click", () => {
-  nextSlide();
-  stopSlider();
-  startSlider();
-});
-
-prevBtn?.addEventListener("click", () => {
-  prevSlide();
-  stopSlider();
-  startSlider();
-});
-
-// Dots
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    currentSlide = index;
-    showSlide(currentSlide);
-    stopSlider();
-    startSlider();
-  });
-});
-
-// Pause on hover
-const heroSlider = document.querySelector(".hero-slider");
-
-heroSlider?.addEventListener("mouseenter", stopSlider);
-heroSlider?.addEventListener("mouseleave", startSlider);
-
-// Touch swipe support
-let touchStartX = 0;
-let touchEndX = 0;
-
-heroSlider?.addEventListener("touchstart", e => {
-  touchStartX = e.changedTouches[0].screenX;
-});
-
-heroSlider?.addEventListener("touchend", e => {
-
-  touchEndX = e.changedTouches[0].screenX;
-
-  const diff = touchStartX - touchEndX;
-
-  if (Math.abs(diff) > 50) {
-
-    if (document.body.classList.contains("rtl")) {
-      // RTL direction
-      if (diff > 0) {
-        prevSlide();
-      } else {
-        nextSlide();
-      }
-    } else {
-      // LTR direction
-      if (diff > 0) {
-        nextSlide();
-      } else {
-        prevSlide();
-      }
+        if (dots[index]) {
+            dots[index].classList.add("active");
+        }
     }
 
-    stopSlider();
+
+    // Next slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+
+    // Previous slide
+    function prevSlide() {
+        currentSlide =
+            (currentSlide - 1 + slides.length) % slides.length;
+
+        showSlide(currentSlide);
+    }
+
+
+    // Auto slide
+    function startSlider() {
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+
+    // Stop auto slide
+    function stopSlider() {
+        clearInterval(slideInterval);
+    }
+
+
+    // Arrow buttons
+    nextBtn?.addEventListener("click", () => {
+        nextSlide();
+        stopSlider();
+        startSlider();
+    });
+
+
+    prevBtn?.addEventListener("click", () => {
+        prevSlide();
+        stopSlider();
+        startSlider();
+    });
+
+
+    // Dots
+    dots.forEach((dot, index) => {
+
+        dot.addEventListener("click", () => {
+
+            currentSlide = index;
+
+            showSlide(currentSlide);
+
+            stopSlider();
+            startSlider();
+
+        });
+
+    });
+
+
+    // Pause on hover
+    const heroSlider = document.querySelector(".hero-slider");
+
+    heroSlider?.addEventListener("mouseenter", stopSlider);
+    heroSlider?.addEventListener("mouseleave", startSlider);
+
+
+    // Touch swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    heroSlider?.addEventListener("touchstart", e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+
+    heroSlider?.addEventListener("touchend", e => {
+
+        touchEndX = e.changedTouches[0].screenX;
+
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > 50) {
+
+            if (document.body.classList.contains("rtl")) {
+
+                if (diff > 0) {
+                    prevSlide();
+                } else {
+                    nextSlide();
+                }
+
+            } else {
+
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+
+            }
+
+            stopSlider();
+            startSlider();
+        }
+
+    });
+
+
+    // Initialize slider
+    showSlide(currentSlide);
     startSlider();
 
-  }
-
-});
-
-// Initialize
-showSlide(currentSlide);
-startSlider();
+}
 
 
 
@@ -331,9 +365,11 @@ document.addEventListener('DOMContentLoaded', function () {
    SCROLL TO TOP
 ======================================== */
 
-const scrollTopBtn = document.getElementById("scrollTopBtn");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (scrollTopBtn) {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    if (!scrollTopBtn) return;
 
     window.addEventListener("scroll", function () {
 
@@ -353,4 +389,5 @@ if (scrollTopBtn) {
         });
 
     });
-}
+
+});

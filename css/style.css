@@ -25,7 +25,9 @@
   --shadow:0 8px 25px rgba(0,0,0,.08);
   --transition:all .3s ease;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* ========================================
    RESET
 ======================================== */
