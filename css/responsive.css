@@ -711,17 +711,32 @@ body.rtl .footer-bottom-links{
   }
 
 }
-body.rtl .footer-contact{
-  direction:rtl;
+/* ========================================
+   RTL FOOTER CONTACT ALIGNMENT
+======================================== */
+
+body.rtl .footer-contact {
+    direction: rtl;
 }
 
-body.rtl .footer-contact li{
-  display:flex;
-  flex-direction:row-reverse;
-  align-items:flex-start;
-  justify-content:flex-start;
-  gap:12px;
-  text-align:right;
+body.rtl .footer-contact li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+    text-align: right;
+}
+
+body.rtl .footer-contact li i {
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+body.rtl .footer-contact li span {
+    flex: 1;
+    text-align: right;
 }
 
 body.rtl .footer-contact i{
@@ -1058,7 +1073,17 @@ body.rtl .next-slide{
   }
 
 }
+/* ========================================
+   HOME 1 - RTL FEATURE GAP
+======================================== */
 
+body.rtl .hero-features {
+    gap: 15px;
+}
+
+body.rtl .feature-item {
+    gap: 12px;
+}
 
 
 
@@ -3011,12 +3036,29 @@ body.rtl .hero2-content{
   text-align:right;
 }
 
-body.rtl .hero2-search{
-  flex-direction:row-reverse;
+/* ========================================
+   HOME 2 HERO - RTL SEARCH ALIGNMENT
+======================================== */
+
+body.rtl .hero2-search {
+    direction: rtl;
+    flex-direction: row;
+    align-items: center;
 }
 
-body.rtl .hero2-search i{
-  margin:0 0 0 16px;
+body.rtl .hero2-search i {
+    margin: 0 0 0 16px;
+    flex-shrink: 0;
+}
+
+body.rtl .hero2-search input {
+    direction: rtl;
+    text-align: right;
+    flex: 1;
+}
+
+body.rtl .hero2-search button {
+    flex-shrink: 0;
 }
 
 body.rtl .hero2-buttons{
@@ -3554,33 +3596,54 @@ body.rtl .deal-card{
 
 /* ========================================
    RTL MODE
+========================================/
+/* ========================================
+   HOME 2 STORE LOCATIONS - RTL FIX
 ======================================== */
 
-body.rtl .stores-grid{
-  direction:rtl;
+body.rtl .stores-grid {
+    direction: rtl;
 }
 
-body.rtl .store-content{
-  text-align:right;
+body.rtl .store-card {
+    direction: rtl;
 }
 
-body.rtl .store-content p{
-  flex-direction:row-reverse;
-  text-align:right;
+body.rtl .store-content {
+    text-align: right;
 }
 
-body.rtl .store-content p i{
-  margin-top:3px;
+body.rtl .store-content h3 {
+    text-align: right;
 }
 
-body.rtl .store-card::before{
-  transform-origin:right;
+body.rtl .store-content p {
+    display: flex;
+    flex-direction: row;   /* IMPORTANT */
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+    text-align: right;
 }
 
-body.rtl .store-btn{
-  text-align:center;
+body.rtl .store-content p i {
+    flex-shrink: 0;
+    margin-top: 4px;
 }
 
+body.rtl .store-content p span {
+    flex: 1;
+    text-align: right;
+}
+
+body.rtl .store-card::before {
+    transform-origin: right;
+}
+
+body.rtl .store-btn {
+    text-align: center;
+}
 /* ========================================
    RTL RESPONSIVE
 ======================================== */
@@ -6064,28 +6127,50 @@ body.rtl .hours-layout{
   direction:rtl;
 }
 
-body.rtl .hours-card{
-  text-align:right;
+/* ========================================
+   STORE PAGE - CONTACT SUPPORT RTL
+======================================== */
+
+body.rtl .hours-card {
+    direction: rtl;
+    text-align: right;
 }
 
-body.rtl .hours-card-head{
-  flex-direction:row-reverse;
+body.rtl .hours-card-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
 }
 
-body.rtl .hours-row{
-  flex-direction:row-reverse;
+body.rtl .hours-contact-list {
+    direction: rtl;
 }
 
-body.rtl .hours-contact-item{
-  flex-direction:row-reverse;
+body.rtl .hours-contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    text-align: right;
 }
 
-body.rtl .hours-button{
-  flex-direction:row-reverse;
+body.rtl .hours-contact-item i {
+    flex-shrink: 0;
+    margin-top: 4px;
 }
 
-body.rtl .hours-button:hover i{
-  transform:translateX(-5px);
+body.rtl .hours-contact-item > div {
+    flex: 1;
+    text-align: right;
+}
+
+body.rtl .hours-contact-item span,
+body.rtl .hours-contact-item p {
+    display: block;
+    text-align: right;
 }
 
 /* ========================================

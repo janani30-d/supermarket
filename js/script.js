@@ -391,3 +391,56 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+
+
+/* ========================================
+   REWARDS FAQ
+======================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const faqItems = document.querySelectorAll(".rewardfaq-item");
+
+    faqItems.forEach(function (item) {
+
+        const question = item.querySelector(".rewardfaq-question");
+        const answer = item.querySelector(".rewardfaq-answer");
+        const icon = question.querySelector("i");
+
+        question.addEventListener("click", function () {
+
+            const isOpen = item.classList.contains("active");
+
+            // Close all FAQs
+            faqItems.forEach(function (otherItem) {
+
+                otherItem.classList.remove("active");
+
+                const otherIcon =
+                    otherItem.querySelector(".rewardfaq-question i");
+
+                if (otherIcon) {
+                    otherIcon.classList.remove("fa-minus");
+                    otherIcon.classList.add("fa-plus");
+                }
+
+            });
+
+            // Open clicked FAQ
+            if (!isOpen) {
+
+                item.classList.add("active");
+
+                icon.classList.remove("fa-plus");
+                icon.classList.add("fa-minus");
+
+            }
+
+        });
+
+    });
+
+});
