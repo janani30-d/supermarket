@@ -11,37 +11,63 @@ const themeToggleMobile = document.getElementById('theme-toggle-mobile');
 
 const rtlToggle = document.getElementById('rtl-toggle');
 const rtlToggleMobile = document.getElementById('rtl-toggle-mobile');
-// ========================================
-// MOBILE MENU TOGGLE
-// ========================================
+/* ========================================
+   MOBILE MENU TOGGLE
+======================================== */
+
 if (menuToggle && navMenu) {
 
-  menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    navMenu.classList.toggle('active');
-  });
+    menuToggle.addEventListener('click', () => {
 
-  // Close menu when a normal menu link is clicked
-  document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', function (e) {
+        menuToggle.classList.toggle('active');
+navMenu.classList.toggle('active');
 
-      // Don't close menu when clicking the Home dropdown
-      if (window.innerWidth <= 1024 &&
-          this.parentElement.classList.contains('dropdown')) {
-        return;
-      }
+        const icon = menuToggle.querySelector('i');
 
-      if (window.innerWidth <= 1024) {
-        navMenu.classList.remove('active');
-        menuToggle.classList.remove('active');
-
-        document.querySelectorAll('.dropdown').forEach(item => {
-          item.classList.remove('active');
-        });
-      }
+        if (icon) {
+            if (menuToggle.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
 
     });
-  });
+
+    /* Close menu when normal link is clicked */
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+
+        link.addEventListener('click', function () {
+
+            if (
+                window.innerWidth <= 1024 &&
+                this.parentElement.classList.contains('dropdown')
+            ) {
+                return;
+            }
+
+            if (window.innerWidth <= 1024) {
+
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+
+                const icon = menuToggle.querySelector('i');
+
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+
+                document.querySelectorAll('.dropdown').forEach(item => {
+                    item.classList.remove('active');
+                });
+            }
+
+        });
+
+    });
 
 }
 

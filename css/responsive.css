@@ -153,8 +153,8 @@
   }
 
   .logo img{
-    width:55px;
-    height:55px;
+    width:70px;
+    height:70px
   }
 
   .logo span{
@@ -193,8 +193,8 @@
   }
 
   .logo img{
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
   }
 
   .logo span{
@@ -540,9 +540,20 @@ body.rtl .nav-menu a::after{
   }
 
   .newsletter-form input{
- 
-    height:150px;
+    height:42px;
+    width:100%;
+    max-width:460px;
+    margin:0 auto;
+    box-sizing:border-box;
   }
+  .btn-subscribe {
+        width: auto;
+        min-width: 140px;
+        max-width: 180px;
+        height: 42px;
+        padding: 0 24px;
+        align-self: center;
+    }
 
   .footer-main{
     padding:50px 0 40px;
@@ -593,8 +604,9 @@ body.rtl .nav-menu a::after{
   }
 
   .newsletter-form input{
-  
-    font-size:14px;
+    height:42px;
+    width:100%;
+    box-sizing:border-box;
   }
 
   .btn-subscribe{
@@ -786,79 +798,100 @@ body.rtl .footer-col h3{
 }
 
 /* ========================================
-   TABLET (1024px)
+   iPAD PRO - 1024px
 ======================================== */
-@media (max-width:1024px){
+@media (min-width:769px) and (max-width:1024px) {
 
-  .hero-slider{
-    height:620px;
-  }
+    .hero-slider {
+        height: 620px;
+        min-height: 620px;
+    }
 
-  .hero-slider .container{
-    align-items:center;
-  }
+    .hero-slider .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
 
-  .hero-content{
-    max-width:520px;
-  }
+    .hero-content {
+        width: 52%;
+        max-width: 520px;
+        padding: 30px 0;
+        box-sizing: border-box;
+    }
 
-  .hero-content h1{
-    font-size:44px;
-    line-height:1.15;
-  }
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
 
-  .hero-content p{
-    font-size:16px;
-    line-height:1.7;
-    margin-bottom:28px;
-  }
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 24px;
 
-  .hero-buttons{
-    gap:14px;
-    margin-bottom:30px;
-  }
+        /* Prevent text clipping */
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
 
-  .btn-primary,
-  .btn-outline{
-    padding:14px 24px;
-    font-size:15px;
-  }
+    .hero-buttons {
+        margin-bottom: 24px;
+    }
 
-  .hero-features{
-    gap:18px;
-  }
+    .hero-features {
+        gap: 14px;
+        flex-wrap: wrap;
+    }
 
-  .feature-item{
-    font-size:14px;
-  }
+    .feature-item {
+        font-size: 13px;
+    }
 
-  .feature-item i{
-    width:38px;
-    height:38px;
-  }
+    .feature-item i {
+        width: 36px;
+        height: 36px;
+    }
 
-  .slider-arrow{
-    width:50px;
-    height:50px;
-  }
+    /* Grocery image */
+    .hero-slider .hero-image {
+        width: 48%;
+        max-width: 480px;
+    }
 
-  .prev-slide{
-    left:20px;
-  }
+    .hero-slider .hero-image img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        object-fit: contain;
+    }
 
-  .next-slide{
-    right:20px;
-  }
+    /* Slider arrows */
+    .slider-arrow {
+        width: 44px;
+        height: 44px;
+    }
 
+    .prev-slide {
+        left: 18px;
+    }
+
+    .next-slide {
+        right: 18px;
+    }
 }
-
 /* ========================================
    TABLET (768px)
 ======================================== */
 @media (max-width:768px){
 
   .hero-slider{
-    height:500px;
+    height:540px;
   }
 
   .hero-slider .container{
@@ -870,8 +903,10 @@ body.rtl .footer-col h3{
   }
 
   .hero-content{
-    max-width:100%;
-    padding:0;
+    width: 100%;
+        max-width: 100%;
+        padding: 0 35px;
+        box-sizing: border-box;
   }
 
   .offer-badge{
@@ -885,9 +920,12 @@ body.rtl .footer-col h3{
   }
 
   .hero-content p{
-    font-size:15px;
-    line-height:1.6;
-    margin-bottom:20px;
+    width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        overflow: visible;
+        word-break: normal;
+        overflow-wrap: break-word;
   }
 
   .hero-buttons{
@@ -914,6 +952,21 @@ body.rtl .footer-col h3{
   .slider-dots{
     bottom:16px;
   }
+  .slider-arrow{
+    width:42px;
+    height:42px;
+    top:50%;
+    transform:translateY(-50%);
+  }
+
+  .prev-slide{
+    left:12px;
+  }
+
+  .next-slide{
+    right:12px;
+  }
+
 
 }
 
@@ -993,15 +1046,15 @@ body.rtl .footer-col h3{
   .slider-arrow{
     width:36px;
     height:36px;
-    top:58%;
+    top:50%;
   }
 
   .prev-slide{
-    left:12px;
+    left:10px;
   }
 
   .next-slide{
-    right:12px;
+    right:10px;
   }
 
   .slider-dots{
@@ -2601,13 +2654,21 @@ body.rtl .blog-action{
     padding:50px 40px;
   }
 
-  .cta-image{
-    order:-1;
-  }
+  .cta-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .cta-image img{
-    max-width:280px;
-  }
+    .cta-image img {
+        display: block;
+        max-width: 280px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+
 
   .cta-content h2{
     font-size:36px;
@@ -2641,6 +2702,9 @@ body.rtl .blog-action{
 
   .cta-image img{
     max-width:240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cta-content h2{
@@ -3216,6 +3280,21 @@ body.rtl .hero2-offer{
     object-fit: contain;
   
   }
+  .featured-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featured-image img {
+        display: block;
+        width: auto;
+        max-width: 240px;
+        height: 220px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
 
 }
 
@@ -3265,9 +3344,22 @@ body.rtl .hero2-offer{
     object-fit: contain;
   
   }
-  .featured-image img{
-    height:220px;
-  }
+  .featured-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featured-image img {
+        display: block;
+        width: auto;
+        max-width: 240px;
+        height: 220px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+  
 
 }
 
@@ -3727,11 +3819,15 @@ body.rtl .store-btn {
     gap:14px;
   }
 
-  .membership-benefits{
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-  }
+  .membership-benefits {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
+    .membership-card:nth-child(3) {
+        grid-column: auto;
+        width: 100%;
+    }
 }
 
 /* ========================================
@@ -9341,8 +9437,9 @@ body.rtl .weekpromo-card-content a::after{
   }
 
   .combodeal-grid{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(1,1fr);
     gap:22px;
+    width: 100%;
   }
 
   .combodeal-image img{
@@ -9601,7 +9698,7 @@ body.rtl .combodeal-btn{
   }
 
   .coupondeal-grid{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(1,1fr);
     gap:22px;
   }
 
@@ -9869,7 +9966,7 @@ body.rtl .coupondeal-btn{
   }
 
   .flashsale-grid{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(1,1fr);
     gap:22px;
   }
 
@@ -13036,31 +13133,46 @@ body.rtl .contactinfo-content{
     height:240px;
   }
 
-  .contactform-storecard{
-    padding:20px;
-    border-radius:18px;
-  }
+ .contactform-storecard {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 18px;
+    }
 
-  .contactform-storecard h3{
-    font-size:20px;
-    margin-bottom:18px;
-  }
+    .contactform-storecard h3 {
+        text-align: left;
+        margin-bottom: 22px;
+    }
 
-  .contactform-storeitem{
-    gap:12px;
-    margin-bottom:16px;
-  }
+    .contactform-storeitem {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        width: 100%;
+        margin-bottom: 18px;
+    }
 
-  .contactform-storeitem i{
-    width:40px;
-    height:40px;
-    font-size:16px;
-    border-radius:12px;
-  }
+    .contactform-storeitem i {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
 
-  .contactform-storeitem span{
-    font-size:14px;
-  }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+
+    .contactform-storeitem span {
+        flex: 1;
+        text-align: left;
+        line-height: 1.6;
+        padding-top: 6px;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
 
   .contactform-storebtn{
     padding:14px;
