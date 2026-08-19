@@ -540,11 +540,12 @@ body.rtl .nav-menu a::after{
   }
 
   .newsletter-form input{
-    height:42px;
-    width:100%;
-    max-width:460px;
-    margin:0 auto;
-    box-sizing:border-box;
+   width: 280px !important;
+        max-width: 280px !important;
+        height: 38px;
+        margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 10px;
   }
   .btn-subscribe {
         width: auto;
@@ -1496,7 +1497,7 @@ body.rtl .categories-action{
   }
 
   .home1deals-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:22px;
   }
 
@@ -2051,7 +2052,7 @@ body.rtl .products-action{
   }
 
   .why-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -2239,7 +2240,7 @@ body.rtl .why-icon{
   }
 
   .testimonial-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -2445,7 +2446,7 @@ body.rtl .testimonial-user{
   }
 
   .blog-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -2691,30 +2692,41 @@ body.rtl .blog-action{
 @media (max-width:768px){
 
   .cta-section{
-    padding:60px 0;
+    padding:45px 0;
   }
 
   .cta-wrapper{
-    padding:40px 28px;
-    gap:32px;
-    border-radius:28px;
+    grid-template-columns:1fr;
+        padding:32px 24px;
+        gap:24px;
+        border-radius:24px;
+        text-align:center;
   }
 
-  .cta-image img{
-    max-width:240px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  .cta-image{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .cta-image img{
+        width:100%;
+        max-width:400px;
+        height:auto;
+        object-fit:contain;
+    }
 
   .cta-content h2{
-    font-size:30px;
-    line-height:1.3;
+    font-size:28px;
+        line-height:1.25;
+        margin-bottom:12px;
   }
 
   .cta-content p{
     font-size:15px;
     line-height:1.7;
+    margin-bottom: 20px;
   }
 
   .cta-buttons{
@@ -2737,7 +2749,7 @@ body.rtl .blog-action{
 @media (max-width:480px){
 
   .cta-section{
-    padding:50px 0;
+    padding:45px 0;
   }
 
   .cta-wrapper{
@@ -3330,18 +3342,18 @@ body.rtl .hero2-offer{
   }
 
   .deal-products{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:18px;
   }
 
   .deal-card{
-    padding:22px;
+    padding:18px;
   }
 
   .deal-card img{
     width:140%;
-    height:200px;
-    object-fit: contain;
+    height:150px;
+    object-fit: cover;
   
   }
   .featured-image {
@@ -3605,7 +3617,7 @@ body.rtl .deal-card{
   }
 
   .stores-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -4147,7 +4159,7 @@ body.rtl .membership-plan .btn-primary{
   }
 
   .organic-featured{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     text-align:center;
     padding:30px 24px;
     border-radius:24px;
@@ -5373,7 +5385,7 @@ body.rtl .network-stats-grid{
   }
 
   .locator-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:26px;
   }
 
@@ -5407,7 +5419,6 @@ body.rtl .network-stats-grid{
   .locator-heading{
     margin-bottom:40px;
   }
-
   .locator-heading h2{
     font-size:30px;
   }
@@ -7334,7 +7345,7 @@ body.rtl .produce-secondary-btn{
   }
 
   .wellness-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:24px;
   }
 
@@ -7916,7 +7927,7 @@ body.rtl .seasonal-footer{
   }
 
   .lifestyle-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -8166,7 +8177,7 @@ body.rtl .lifestyle-content a::after{
   }
 
   .galleryx-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     grid-auto-rows:240px;
     gap:16px;
   }
@@ -8925,7 +8936,7 @@ body.rtl .offerhero-discount-card{
   }
 
   .dealgrid-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -9221,7 +9232,7 @@ body.rtl .dealgrid-btn{
   }
 
   .weekpromo-sidecards{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
   }
 
   .weekpromo-card{
@@ -10873,7 +10884,7 @@ body.rtl .loyalhero-card-top{
   }
 
   .rewardsteps-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -11359,7 +11370,7 @@ body.rtl .tiercompare-popular{
   }
 
   .pointsearn-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -11569,7 +11580,7 @@ body.rtl .pointsearn-card{
   }
 
   .rewardcatalog-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -11801,7 +11812,7 @@ body.rtl .rewardcatalog-main-btn{
   }
 
   .memberstory-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -12818,7 +12829,7 @@ body.rtl .contacthero-card-top{
   }
 
   .contactinfo-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
@@ -13323,7 +13334,7 @@ body.rtl .contactform-group textarea{
   }
 
   .supportcategory-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:(2,1fr);
     gap:20px;
   }
 
