@@ -14528,3 +14528,444 @@ html[dir="rtl"] .scroll-top-btn {
         left: 18px;
     }
 }
+
+
+
+/* Home Hero CTA - Equal Button Size */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.hero-buttons a {
+    width: 180px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+/* =========================================
+   HOME 1 HERO - FULL CONTENT CENTER
+========================================= */
+
+.hero-slider .slide .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-slider .hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Badge */
+.hero-slider .offer-badge {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Heading */
+.hero-slider .hero-content h1 {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Paragraph */
+.hero-slider .hero-content p {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.hero-slider .hero-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Features */
+.hero-slider .hero-features {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* =========================================================
+   RTL FOOTER SOCIAL ICONS
+========================================================= */
+
+html[dir="rtl"] .footer-social,
+body.rtl .footer-social {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+html[dir="rtl"] .footer-social a,
+body.rtl .footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 0;
+}
+/* =========================================================
+   HOME 2 - FRESH MOMENTS GALLERY
+   Clear images + better hover
+========================================================= */
+
+.gallery-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Keep image clear */
+    opacity: 1;
+    filter: none;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+/* Overlay */
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease,
+        background 0.3s ease;
+
+    pointer-events: none;
+}
+
+/* Hover */
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.08) contrast(1.05);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+/* Instagram icon */
+.gallery-overlay i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+    color: #ffffff;
+
+    background: rgba(20, 190, 85, 0.9);
+
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay i {
+    transform: scale(1);
+}
+
+
+
+/* =========================================================
+   HERO OVERLAY CARDS - REDUCED SIZE
+========================================================= */
+
+.offerhero-discount-card,
+.loyalhero-card,
+.contacthero-card {
+    padding: 20px 22px;
+    width: 270px;
+    max-width: 270px;
+    border-radius: 18px;
+}
+
+/* Card heading */
+.offerhero-discount-card h3,
+.loyalhero-card h3,
+.contacthero-card h3 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 12px 0 8px;
+}
+
+/* Card paragraph */
+.offerhero-discount-card p,
+.loyalhero-card p,
+.contacthero-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+/* Small badge */
+.offerhero-discount-badge,
+.loyalhero-card-top span,
+.contacthero-card-top span {
+    font-size: 11px;
+    padding: 7px 12px;
+}
+
+/* Card top row */
+.loyalhero-card-top,
+.contacthero-card-top {
+    font-size: 13px;
+}
+/* =========================================================
+   SMALL HERO OVERLAY CARD
+========================================================= */
+
+.offerhero-discount-card,
+.loyalhero-card,
+.contacthero-card {
+    width: 210px;
+    max-width: 210px;
+    padding: 12px 14px;
+    border-radius: 14px;
+}
+
+/* Badge */
+.offerhero-discount-badge,
+.loyalhero-card-top span,
+.contacthero-card-top span {
+    font-size: 8px;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+/* Heading */
+.offerhero-discount-card h3,
+.loyalhero-card h3,
+.contacthero-card h3 {
+    font-size: 16px;
+    line-height: 1.15;
+    margin: 8px 0 5px;
+}
+
+/* Description */
+.offerhero-discount-card p,
+.loyalhero-card p,
+.contacthero-card p {
+    font-size: 10px;
+    line-height: 1.35;
+    margin: 0;
+}
+/* Small button inside hero cards */
+.offerhero-discount-card a,
+.loyalhero-card a,
+.contacthero-card a {
+    display: inline-block;
+    padding: 7px 14px;
+    font-size: 11px;
+    line-height: 1.2;
+    border-radius: 8px;
+}
+/* Reduce buttons inside loyalty/contact hero cards */
+.loyalhero-card a,
+.contacthero-card a {
+    width: auto;
+    max-width: 160px;
+    display: inline-block;
+    padding: 7px 16px;
+    font-size: 11px;
+}
+
+/* =========================================================
+   OFFER - COMBO DEAL & COUPON DEAL CTA
+   MIDDLE CARD = PRIMARY
+   OTHER CARDS = SECONDARY
+========================================================= */
+
+/* ---------- COMBO DEAL ---------- */
+
+.combodeal-grid .combodeal-card .combodeal-btn {
+    background: transparent !important;
+    color: #20c968 !important;
+    border: 1px solid #20c968 !important;
+}
+
+.combodeal-grid .combodeal-card:nth-child(2) .combodeal-btn {
+    background: #20c968 !important;
+    color: #ffffff !important;
+    border: 1px solid #20c968 !important;
+}
+
+
+/* ---------- COUPON DEAL ---------- */
+
+.coupondeal-grid .coupondeal-card .coupondeal-btn {
+    background: transparent !important;
+    color: #20c968 !important;
+    border: 1px solid #20c968 !important;
+}
+
+.coupondeal-grid .coupondeal-card:nth-child(2) .coupondeal-btn {
+    background: #20c968 !important;
+    color: #ffffff !important;
+    border: 1px solid #20c968 !important;
+}
+
+
+/* ---------- SAME HOVER STYLE ---------- */
+
+.combodeal-grid .combodeal-card .combodeal-btn:hover,
+.coupondeal-grid .coupondeal-card .coupondeal-btn:hover {
+    background: #20c968 !important;
+    color: #ffffff !important;
+    border-color: #20c968 !important;
+}
+
+
+
+/* =========================================
+   CATEGORIES HERO - CENTER ALIGNMENT
+========================================= */
+
+.catalog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.catalog-content .catalog-badge {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-content h1,
+.catalog-content p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.catalog-stats {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+/* =========================================
+   FRESHMART CATEGORIES - DARK MODE STATS
+========================================= */
+
+body.dark-mode .ctafresh-stat-box {
+    background: #183f35;
+    color: #ffffff;
+}
+
+body.dark-mode .ctafresh-stat-box h3 {
+    color: #39d98a;
+}
+
+body.dark-mode .ctafresh-stat-box p {
+    color: #d6e4df;
+}
+
+.header-actions .icon-btn {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-actions .icon-btn {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    padding: 0 !important;
+}
+
+.header-actions .btn-login {
+    height: 40px !important;
+    min-height: 40px !important;
+    padding: 0 18px !important;
+    margin: 0 !important;
+}
+
+/* =========================================================
+   CONTACT LAST SECTION - SAME CTA SIZE
+========================================================= */
+
+.supportcategory-link {
+    width: 190px;
+    min-width: 190px;
+    height: 56px;
+    min-height: 56px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    text-align: center;
+    line-height: 1.2;
+    white-space: normal;
+}
